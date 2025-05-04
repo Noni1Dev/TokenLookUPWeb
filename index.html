@@ -271,7 +271,6 @@
         <div class="user-info">
           <div class="username">
             <span id="username">Username</span>
-            <span id="discriminator">#0000</span>
             <span id="nitroBadge" class="badge nitro-badge hidden">Nitro</span>
             <span id="verifiedBadge" class="badge verified-badge hidden">Verified</span>
           </div>
@@ -514,7 +513,6 @@
       function updateUserProfile(data) {
         // Basic info
         document.getElementById('username').textContent = data.username || 'N/A';
-        document.getElementById('discriminator').textContent = data.discriminator ? `#${data.discriminator}` : '';
         document.getElementById('userId').textContent = data.id || 'N/A';
         document.getElementById('email').textContent = data.email || 'Not available';
         document.getElementById('phone').textContent = data.phone || 'Not set';
